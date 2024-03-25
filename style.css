@@ -1,0 +1,67 @@
+body{
+    font-family: sans-serif;
+    background-color: gold;
+    text-align: center;
+    padding: 40px;
+}
+
+.container{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+button{
+    padding: 20px;
+    width: 100px;
+    border-radius: 20px;
+    border-color: white;
+    background-color: white;
+    font-weight: medium}
+
+h1{
+    font-size: 10vh;
+}
+
+#goomba {
+    max-width: 10vw;
+    padding-top: 200px;
+    position: absolute;
+    left: 0;
+    background-size: cover;
+}
+#mario {
+    max-width: 15vw;
+    transition: .2s;
+    padding-top: 200px;
+    margin: 0 auto;
+    background-size: cover;
+    z-index: 2; 
+}
+#coin {
+    max-width: 5vw;
+    padding-bottom: 30px;
+    transition: .3s;
+}
+div {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    transform: translateX(-100vw);
+    transition: 2s;
+}
+
+.in_beeld {
+    transform: translateX(0);
+}
+
+.uit_beeld {
+transform: translateY(-45vh);
+
+}
+
+.goomba_ren {
+    transform: translateX(100vw);
+    transition: transform 1.5s linear; 
+}
