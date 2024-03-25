@@ -1,5 +1,4 @@
-//const=
-
+//const= elementen die worden gelinkt aan functies
 
 const startknop = document.querySelector('#start');
 const resetknop = document.querySelector('#reset');
@@ -10,11 +9,12 @@ const coin = document.querySelector('#coin');
 const soundEffect = document.querySelector('#soundEffect');
 const veranderKnop = document.querySelector('#veranderAfbeeldingKnop');
 
-
+//brent de gehele animatie in beeld
 function zetInBeeld(){
     console.log('Super Mario')
     div.classList.add('in_beeld')
 }
+
 
 function zetUitBeeld(){
     div.classList.add('uit_beeld')
@@ -47,6 +47,7 @@ function VerdwijnEnVerschijn() {
     }
 }
 
+//laat mario veranderen naar fire mario met een knopje
 function veranderAfbeelding() {
     if (mario.src.includes("SMBW_Mario_Jump.webp")) {
         mario.src = "img/firemario.webp"; 
@@ -55,7 +56,7 @@ function veranderAfbeelding() {
     }
 }
 
-// Voeg een click event listener toe aan de knop
+// Voegt een click event listener toe aan de knop
 veranderKnop.addEventListener('click', veranderAfbeelding);
 
 
